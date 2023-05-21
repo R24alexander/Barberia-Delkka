@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    background-color: #ccc;
+    padding: 20px 0;
+}
+
+.contenido-head {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-links {
+    position: absolute;
+    right: 0;
+    top: 110px;
+}
+
+.nav-links li {
+    display: inline;
+	margin: 0 0 0 15px;
+}
+
+.nav-links a {
+    text-transform: uppercase; /*para transformar en mayuscula*/
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+main {
+    width: 100vw;
+}
+.container-imagenes {
+    width: 940px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.container-imagenes ul {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 12px;
+}
+
+.container-imagenes li {
+    width: 33%;
+    padding: 35px 12px;
+    text-align: center;
+    list-style: none;
+    border: 3px solid #000;
+    border-radius: 9px;
+}
+
+.container-imagenes li:hover {
+    border-color: #c78c19;
+}
+
+.container-imagenes li:active {
+    border-color: #088c19;
+}
+
+.container-imagenes h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-precio {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url(../imagenes/bg.jpg);
+	/*background: no-repeat;*/
+	padding: 40px;
+
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 13px;
+	margin: 20px;
+}
+
+@media (max-width: 920px) {
+    header, main {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .nav-links {
+        width: 55%;
+    }
+
+
+    .container-imagenes ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 820px) {
+
+
+    .contenido-head {
+        width: 100%;
+        /* display: flex; */
+    }
+    .nav-links {
+        width: 50%;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .nav-links ul li {
+        padding-bottom: 9px;
+    }
+
+    .container-imagenes {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .container-imagenes ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-imagenes ul li {
+        width: 90%;
+        margin: 0;
+        /* padding: 0; */
+    }
+
+    .container-imagenes ul li img {
+        width: 70%;
+    }
+}
+
+/* ===================== FORMULARIO ===================== */
+main {
+    width: 100vw;
+
+}
+
+form {
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label, .input-padron {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px
+}
+
+.input-padron{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+form textarea {
+    min-width: 50%;
+    max-width: 65%;
+    min-height: 150px;
+    max-height: 210px;
+}
+
+fieldset {
+    width: 90%;
+    margin-bottom: 7px;
+    padding: 7px;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: orange;
+	border: none;
+	border-radius: 5px;
+	/*transition: 1s background;*/
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.1);
+
+}
+
+table {
+    width: 30%;
+	margin: 40px  0 40px 100px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+@media (max-width: 820px) {
+
+    .main-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    fieldset {
+        width: 70%;
+    }
+}
+
+@media (max-width: 720px) {
+
+
+    form {
+        width: 90%;
+    }
+
+    .input-padron {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+
+    label {
+        font-size: 1.3em;
+    }
+
+
+
+    .enviar {
+        font-size: 1rem;
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+
+    table {
+        width: 50%;
+        /* margin: 0 auto; */
+    }
+}
